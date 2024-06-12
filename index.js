@@ -39,6 +39,10 @@ const fetchBooks = () => {
         price.innerText = `${book.price}€`;
         button.innerText = "Scarta";
 
+        button.addEventListener("click", () => {
+          col.remove();
+        });
+
         card.appendChild(img);
         card.appendChild(cardBody);
         cardBody.appendChild(title);
